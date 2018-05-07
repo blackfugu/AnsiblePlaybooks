@@ -1,7 +1,7 @@
 - name: test raw module
-  hosts: all
+  hosts: Windows Server
   tasks:
-    - name: run ipconfig
-      raw: ipconfig
-      register: ipconfig
-    - debug: var=ipconfig
+    - name: Create Directory
+      win_file:
+        path: C:\Temp\foo.conf
+        state: absent
