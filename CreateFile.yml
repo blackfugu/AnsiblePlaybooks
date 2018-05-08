@@ -1,7 +1,7 @@
 - name: test raw module
   hosts: Windows Server
   tasks:
-    - name: Create Directory
+    - name: Create Configuration File
       win_file:
         path: C:\Temp\foo.conf
         state: absent
